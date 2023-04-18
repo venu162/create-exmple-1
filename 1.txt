@@ -1,1 +1,10 @@
-hello 
+pipeline {
+   agent any 
+   stages{
+        stage ('svs'){
+        steps {
+          sh 'sudo apt install openjdk-11-jdk -y'
+           }
+       }  
+   }
+}
