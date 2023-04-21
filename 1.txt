@@ -4,6 +4,10 @@ pipeline {
         stage ('svs'){
         steps {
           sh 'sudo apt install openjdk-11-jdk -y'
+
+	stage (vss){
+	steps {
+	  sh 'sudo apt install nginx"
            }
        }  
    }
